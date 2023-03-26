@@ -1,8 +1,15 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .grid-container {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-
+    width: 920px;
 }
 
 .box {
@@ -22,6 +29,6 @@
 
 }
 
-#container {
-    margin: 0;
+#btn {
+    margin-bottom: 10px;
 }

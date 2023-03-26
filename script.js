@@ -1,5 +1,6 @@
 let container = document.getElementById("container")
 let btn = document.getElementById("btn")
+let box = document.querySelectorAll(".box")
 
 function hover(e){
    if(e.target.classList == "box"){e.target.classList = "box-colored"} 
@@ -14,11 +15,11 @@ function fillContainer(num){
 }
 
 function clickBtn(){
-    boxes = prompt("How many Boxes woul you like?")
+    boxes = prompt("How many rows and columns do you want?")
     num = parseInt(boxes)
+    num = num * num
     container.innerHTML = ""
     fillContainer(num)
-    
 }
 
 fillContainer(256)
